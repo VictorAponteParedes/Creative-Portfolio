@@ -2,6 +2,7 @@ import React from 'react';
 import { Certificate } from '../../types';
 import CertificateCard from '../../components/certificate';
 import { certifiReactNative, certifiDjandoTest } from '../../assets';
+
 const certificates: Certificate[] = [
     {
         id: 1,
@@ -25,7 +26,7 @@ const certificates: Certificate[] = [
         issuer: 'Alura',
         date: '2022-12-10',
         description: 'Certificate for completing the Full Stack Development course.',
-        image: '',
+        image: '', // Asegúrate de tener una imagen válida o deja esto vacío si no hay imagen
     },
 ];
 

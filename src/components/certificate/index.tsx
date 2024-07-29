@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Certificate } from '../../types';
+import ImageModal from '../imagenModal';
 
 interface CertificateCardProps {
     certificate: Certificate;
@@ -10,6 +11,7 @@ const CertificateCard: React.FC<CertificateCardProps> = ({ certificate }) => {
 
     const [imageLoaded, setImageLoaded] = useState<boolean>(false);
     const [imageError, setImageError] = useState<boolean>(false);
+    const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
 
     const handleImageLoad = () => {
         setImageLoaded(true);
@@ -21,13 +23,17 @@ const CertificateCard: React.FC<CertificateCardProps> = ({ certificate }) => {
         setImageError(true);
     };
 
+    const openModal = () => setIsModalOpen(true);
+    const closeModal = () => setIsModalOpen(false);
+
     return (
         <div className="bg-white shadow-md p-4 rounded-lg flex">
             {image && !imageError ? (
                 <img
                     src={image}
                     alt={title}
-                    className={`w-32 h-32 object-cover rounded-md mr-4 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
+                    className={`w-32 h-32 object-cover rounded-md mr-4 cursor-pointer ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
+                    onClick={openModal}
                     onLoad={handleImageLoad}
                     onError={handleImageError}
                 />
@@ -44,6 +50,11 @@ const CertificateCard: React.FC<CertificateCardProps> = ({ certificate }) => {
                 <p className="text-gray-500">{date}</p>
                 <p className="text-gray-700 mt-2">{description}</p>
             </div>
+            <ImageModal
+                imageUrl={image || ''}
+                isOpen={isModalOpen}
+                onClose={closeModal}
+            />
         </div>
     );
 };
