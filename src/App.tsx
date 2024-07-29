@@ -8,7 +8,7 @@ const navItems = [
   { name: 'Certificados', href: '/my-certificates' },
 ];
 
-function App() {
+const App: React.FC = () => {
   return (
     <>
       <Header projectName="Mi Portafolio" navItems={navItems} />
