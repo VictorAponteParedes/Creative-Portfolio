@@ -6,5 +6,7 @@ import cerkImagen from './image/imagen-cerk.png'
 import pipImagen from './image/imagen-pip.png'
 import tnaImagen from './image/imagen-na.png'
 import abcImagen from './image/imagen-abc.png'
+import programacionImagen from './image/imagen-programador.jpg'
+import noTestimonies from './image/no-testimonial.jpg'
 
-export { certifiReactNative, certifiDjandoTest, perfilImagen, cerkImagen, pipImagen, tnaImagen, abcImagen };
+export { certifiReactNative, certifiDjandoTest, perfilImagen, cerkImagen, pipImagen, tnaImagen, abcImagen, programacionImagen, noTestimonies };
