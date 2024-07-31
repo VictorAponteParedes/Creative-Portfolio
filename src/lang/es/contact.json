@@ -1,0 +1,15 @@
+{
+  "contact": {
+    "title": "Contacto",
+    "input": {
+      "name": "Nombre",
+      "email": "Correo electrónico",
+      "message": "Mensaje"
+    },
+    "submit": "Enviar",
+    "title5": "Habilidades Personales",
+    "description5": "Además de mis habilidades técnicas, comunicación efectiva y trabajo en equipo. Estas habilidades me han permitido colaborar exitosamente en proyectos complejos y liderar equipos hacia el éxito.",
+    "imageUrl": "personalSkills"
+    
+  }
+}
