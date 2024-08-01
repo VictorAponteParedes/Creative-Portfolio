@@ -33,8 +33,15 @@ export const HomeScreen: React.FC = () => {
                 <h2 className="text-3xl font-bold mb-6">Testimonios</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {testimonials.map((testimonial, index) => (
-                        <div key={index} className="bg-white shadow-md p-6 rounded-lg flex items-start">
-                            <img src={testimonial.image} alt={`Testimonial ${index + 1}`} className="w-24 h-24 object-cover rounded-full mr-4" />
+                        <div
+                            key={index}
+                            className="bg-white shadow-md p-6 rounded-lg flex items-start transition-transform transform hover:scale-105 hover:shadow-lg"
+                        >
+                            <img
+                                src={testimonial.image}
+                                alt={`Testimonial ${index + 1}`}
+                                className="w-24 h-24 object-cover rounded-full mr-4"
+                            />
                             <div>
                                 <h3 className="text-xl font-semibold mb-2">{testimonial.name}</h3>
                                 <p className="text-gray-600">{testimonial.description}</p>

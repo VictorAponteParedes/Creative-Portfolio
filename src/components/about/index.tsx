@@ -1,4 +1,3 @@
-// components/AboutMeCard.tsx
 import React from 'react';
 
 interface AboutMeCardProps {
@@ -9,12 +8,12 @@ interface AboutMeCardProps {
 
 const AboutMeCard: React.FC<AboutMeCardProps> = ({ title, description, imageUrl }) => {
     return (
-        <div className="bg-white shadow-lg rounded-lg overflow-hidden">
+        <div className="bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-xl">
             {imageUrl && (
                 <img
                     src={imageUrl}
                     alt={title}
-                    className="w-full h-48 object-cover"
+                    className="w-full h-48 object-cover transition-transform transform hover:scale-110"
                 />
             )}
             <div className="p-6">
