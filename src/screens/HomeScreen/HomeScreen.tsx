@@ -15,7 +15,6 @@ export const HomeScreen: React.FC = () => {
             <section className="bg-blue-500 text-white p-12 text-center rounded-2xl" style={{ backgroundImage: `url(${programacionImagen})` }}>
                 <h1 className="text-4xl font-bold mb-4">Hola, soy Victor Aponte</h1>
                 <p className="text-xl mb-8">Desarrollador Full Stack</p>
-                <button className="bg-white text-blue-500 px-6 py-3 rounded-lg shadow-lg hover:bg-gray-100">Ver Proyectos</button>
             </section>
 
             {/* Proyectos Destacados */}

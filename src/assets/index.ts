@@ -18,6 +18,7 @@ import skillsPrograming from './image/skillsPrograming.jpg'
 import myCareer from './image/MyCareer.jpg'
 import personalSkills from './image/personalSkill.jpeg'
 import familyHappies from './image/familyHappies.jpeg'
+import fondoHome from './image/fontoHome.jpg'
 
 export { 
     certifiReactNative,
@@ -37,5 +38,6 @@ export {
     skillsPrograming,
     myCareer,
     personalSkills,
-    familyHappies
+    familyHappies,
+    fondoHome
 };
